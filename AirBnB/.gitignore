@@ -1,0 +1,55 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with "go test -c"
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+tmp/
+
+# IDE specific files
+.vscode
+.idea
+
+# .env file
+.env
+
+# Project build
+main
+*templ.go
+
+# OS X generated file
+.DS_Store
+
+
+// 2xx Success
+fiber.StatusOK           // 200 - Request successful
+fiber.StatusCreated      // 201 - Resource created successfully
+fiber.StatusAccepted     // 202 - Request accepted but processing not completed
+
+// 4xx Client Errors
+fiber.StatusBadRequest           // 400 - Invalid request syntax
+fiber.StatusUnauthorized         // 401 - Authentication required
+fiber.StatusForbidden           // 403 - Client lacks access rights
+fiber.StatusNotFound            // 404 - Resource not found
+fiber.StatusMethodNotAllowed    // 405 - HTTP method not allowed
+fiber.StatusConflict            // 409 - Request conflicts with server state
+fiber.StatusUnprocessableEntity // 422 - Validation errors
+
+// 5xx Server Errors
+fiber.StatusInternalServerError // 500 - Unexpected server error
+fiber.StatusNotImplemented      // 501 - Functionality not implemented
+fiber.StatusBadGateway         // 502 - Invalid response from upstream server
+fiber.StatusServiceUnavailable  // 503 - Server temporarily unavailable
+
